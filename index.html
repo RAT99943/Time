@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Match Hub | Твой центр киберспорта</title>
+    <link rel="stylesheet" href="E:\CSNT\css\style.css">
+    <!-- Для иконок (имитация, в реальном проекте можно использовать Font Awesome) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. НАВИГАЦИЯ -->
+    <header class="navbar">
+        <div class="logo">CS <span style="color: #FF3333;">NEWS TRACKER</span></div>
+        <nav>
+            <a href="#">Матчи</a>
+            <a href="#">Результаты</a>
+            <a href="#">Новости</a>
+            <a href="#" class="active">Трансляции</a>
+        </nav>
+        <div class="search-area">
+            <input type="text" placeholder="Поиск..." class="search-input">
+            <button class="search-btn">🔍</button>
+        </div>
+    </header>
+
+    <!-- 2. ГЛАВНЫЙ ЭКРАН (HERO SECTION) -->
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                ВСЕ СЕГОДНЯШНИЕ МАТЧИ CS2 НИЧЕГО ЛИШНЕГО
+            </h1>
+            <p class="hero-subtitle">
+                Свежее расписание, коэффициенты и прямые ссылки на стримы
+            </p>
+            <button class="cta-button" id="cta-main">
+                🔥 СМОТРЕТЬ БЛИЖАЙШИЙ МАТЧ
+            </button>
+        </div>
+    </main>
+
+    <!-- 3. БЛОК МАТЧЕЙ (CORE FUNCTIONALITY) -->
+    <section class="matches-section">
+        <h2>🔥 СЕГОДНЯ В ИГРЕ</h2>
+        
+        <!-- Табы для переключения (JavaScript) -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="today">СЕГОДНЯ</button>
+            <button class="tab-button" data-tab="tomorrow">ЗАВТРА</button>
+        </div>
+
+        <!-- Контейнер Матчей -->
+        <div id="matches-container">
+            <!-- Матчи будут подгружаться здесь (или отображаться из HTML) -->
+
+            <!-- ПРИМЕР МАТЧА (ИДЕТ ПРЯМО СЕЙЧАС - LIVE) -->
+            <div class="match-card live">
+			    <span class="live-badge">LIVE</span>
+                <div class="match-time">ESL Pro League<p>Season 23</p></div>
+                <div class="teams">
+                    <div class="team team-a">
+					<img src="E:\CSNT\Time\PV.png" class="team-icon">
+                        <span class="team-name">PARIVISION</span>
+                    </div>
+                    <div class="score">10:8</div>
+                    <div class="team team-b">
+					<img src="E:\CSNT\Time\Falcons.png" class="team-icon">
+                        <span class="team-name">Falcons</span>
+                    </div>
+                </div>
+                <a href="#" target="_blank" class="watch-link">СМОТРЕТЬ ТРАНСЛЯЦИЮ</a>
+            </div>
+
+            <!-- ПРИМЕР МАТЧА (ПРЕДСТОЯЩИЙ) -->
+            <div class="match-card upcoming">
+				<span class="live-badge"></span>
+                <div class="match-time">IZI WEX Season 1</div>
+                <div class="teams">
+                    <div class="team team-a">
+					<img src="E:\CSNT\Time\WW.png" class="team-icon">
+                        <span class="team-name">WW Team</span>
+                    </div>
+                    <div class="live-time">20:00</div>
+                    <div class="team team-b">
+					<img src="E:\CSNT\Time\TDK.png" class="team-icon">
+                        <span class="team-name">TDK</span>
+                    </div>
+                </div>
+                <a href="#" target="_blank" class="watch-link grey-link">Ожидается</a>
+            </div>
+
+             <!-- ПРИМЕР МАТЧА (ПРЕДСТОЯЩИЙ) -->
+            <div class="match-card upcoming">
+				<span class="live-badge"></span>
+                <div class="match-time">PGL Astana 2026</div>
+                <div class="teams">
+                    <div class="team team-a">
+					<img src="E:\CSNT\Time\HOTU.png" class="team-icon">
+                        <span class="team-name">HOTU</span>
+                    </div>
+                    <div class="live-time">23:00</div>
+                    <div class="team team-b">
+					<img src="E:\CSNT\Time\Aurora.png" class="team-icon">
+                        <span class="team-name">AURORA</span>
+                    </div>
+                </div>
+                <a href="#" target="_blank" class="watch-link grey-link">Ожидается</a>
+            </div>
+
+        </div>
+        
+        <div class="full-schedule-link">
+            <a href="#">ПОСМОТРЕТЬ ПОЛНОЕ РАСПИСАНИЕ →</a>
+        </div>
+    </section>
+
+    <!-- 4. ФУТЕР -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">CS2 NEWS TRACKER</div>
+            <div class="footer-links">
+                <a href="https://t.me/cs3news">Контакты</a>
+                <a href="#">FAQ</a>
+                <a href="#">Правовая информация</a>
+            </div>
+        </div>
+        <p class="copyright">© 2024 CS2 NEWS TRACKER.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
